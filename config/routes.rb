@@ -5,6 +5,6 @@ RailsPrelaunchSignup::Application.routes.draw do
   devise_scope :user do
     root :to => "devise/registrations#new"
   end
-  devise_for :users, :controllers => { :registrations => "registrations" }
+  devise_for :users
   resources :users, :only => [:show, :index]
 end

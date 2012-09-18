@@ -26,10 +26,11 @@ $('document').ready(function() {
   // use AJAX to submit the "request invitation" form
   $('#invitation_button').live('click', function() {
     var email = $('form #user_email').val();
+    var opt_in;
     if($('form #user_opt_in').is(':checked'))
-        var opt_in = true;
+        opt_in = true;
     else
-        var opt_in = false;
+        opt_in = false;
     var dataString = 'user[email]='+ email + '&user[opt_in]=' + opt_in;
     $.ajax({
       type: "POST",
