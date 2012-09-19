@@ -3,6 +3,12 @@
   .modal-header
     %a.close{"data-dismiss" => "modal"} &#215;
     %h3 Thank you!
-  .modal-body
+  .modal-body{:style => "margin-bottom: 120px; overflow: visible"}
     %p We have received your request for an invitation to example.com.
     %p We'll contact you when we launch.
+    %p Share your discovery with your friends!
+    #tweet{:style => "display:inline-block;"}
+      %a.twitter-share-button{"data-count" => "horizontal", "data-text" => "Can't wait to see the ski gear shredset.com has for me!", "data-url" => "https://shredset.com", "data-via" => "shredset", "shredset" => "launchrails", :href => "https://twitter.com/share"}
+    %span{:style => "display:inline-block; vertical-align:text-bottom;"}
+      .fb-like{"data-href" => "http://shredset.com", "data-layout" => "button_count", "data-send" => "false", "data-show-faces" => "false", "data-width" => "90"}
+    .g-plusone{"data-annotation" => "inline", "data-href" => "http://shredset.com", "data-size" => "medium", "data-width" => "120"}
