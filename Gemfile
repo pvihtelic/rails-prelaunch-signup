@@ -1,6 +1,11 @@
 source 'https://rubygems.org'
 gem 'rails', '3.2.8'
-gem 'sqlite3'
+group :development, :test do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+end
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -24,3 +29,6 @@ gem "jquery-datatables-rails", ">= 1.10.0"
 gem "simple_form"
 gem "devise_invitable"
 gem "haml"
+group :production do
+  gem 'thin'
+end
