@@ -16,7 +16,7 @@
 //= require dataTables/jquery.dataTables
 //= require dataTables/jquery.dataTables.bootstrap
 //= require_tree .
-$('document').ready(function() {
+('document').ready(function() {
 
   // display validation errors for the "request invitation" form
   if ($('.alert-error').length > 0) {
