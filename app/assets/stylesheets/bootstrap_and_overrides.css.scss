@@ -3,7 +3,7 @@ $iconSpritePath: asset-url('glyphicons-halflings.png', image);
 $iconWhiteSpritePath: asset-url('glyphicons-halflings-white.png', image);
 @import "bootstrap";
 body { padding-top: 60px; }
-brand { 
+.brand { 
 	text-indent: -999px;
 	width: 169px;
 	height: 26px;
