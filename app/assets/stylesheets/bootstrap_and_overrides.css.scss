@@ -12,4 +12,10 @@ body { padding-top: 60px; }
 	background: url('http://i.imgur.com/PwrWz.png')
 	no-repeat center center;
 	}
+.navbar-inner {
+  background-color: #DDD;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+	}
 @import "bootstrap-responsive";
